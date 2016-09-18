@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="599.999800000005" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.mycompany.controllers.PlayerController">
+  <children>
+    <fx:define>
+      <Image url="@../images/play.png" fx:id="btnImage" />
+    </fx:define>
+    <Pane layoutX="204.0" layoutY="34.0" prefHeight="136.00009999999747" prefWidth="368.0" style="-fx-background-color: #ccc;">
+      <children>
+        <Button fx:id="btnNext" layoutX="0.0" layoutY="45.0" minHeight="44.0" minWidth="55.99995585936995" mnemonicParsing="false" onAction="#next" prefHeight="46.0" prefWidth="56.00005585936742" text="">
+          <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../images/next.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button fx:id="btnBack" layoutX="0.0" layoutY="90.0" minHeight="43.999900000002526" minWidth="55.9998779296875" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="56.00007792968245" text="">
+          <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../images/back.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button fx:id="btnStop" layoutX="0.0" layoutY="0.0" minHeight="46.0" minWidth="56.0" mnemonicParsing="false" onAction="#stop" prefHeight="46.0" prefWidth="56.0" text="">
+          <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../images/stop.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button layoutX="312.0" layoutY="90.0" minHeight="46.0" minWidth="56.0" mnemonicParsing="false" onAction="#importFile" prefHeight="46.0" prefWidth="56.0" text="">
+          <graphic>
+            <ImageView fitHeight="46.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../images/folder.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button layoutX="312.0" layoutY="45.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="56.0" text="" />
+        <Button layoutX="313.0" layoutY="0.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="56.0" text="" />
+        <VBox fx:id="vb" layoutX="56.0" layoutY="0.0" prefHeight="135.9998779296875" prefWidth="256.0000999999975">
+          <children>
+            <ListView fx:id="display" prefHeight="137.0" prefWidth="248.0" />
+          </children>
+        </VBox>
+      </children>
+    </Pane>
+    <Circle fill="#606060" layoutX="99.0" layoutY="101.0" radius="77.99995422363281" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-color: #808080;&#10;" />
+    <Button fx:id="btnPlay" alignment="CENTER_RIGHT" defaultButton="false" disable="false" layoutX="30.0" layoutY="34.0" minHeight="105.0" minWidth="122.0" mnemonicParsing="false" onAction="#play" opacity="1.0" prefHeight="135.9998779296875" prefWidth="138.99996948242188" style="" text="" textAlignment="LEFT" textFill="BLACK" underline="false">
+      <font>
+        <Font size="12.0" />
+      </font>
+      <graphic>
+        <ImageView fx:id="imgPlay" fitHeight="105.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../images/play.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/Styles.css" />
+  </stylesheets>
+</AnchorPane>

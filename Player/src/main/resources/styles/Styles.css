@@ -1,0 +1,11 @@
+.mainFxmlClass {
+
+    #AnchorPane {
+       background: #000000;
+    }
+    
+    #btnPlay {
+        -fx-background-radius: 210;
+    }
+    
+}
